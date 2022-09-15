@@ -15,6 +15,8 @@ app.use(
 app.use(express.urlencoded({extended: true}));
 
 import productsRoutes from "./routes/products.js";
+import usersRoutes from "./routes/Users.js";
 app.use("/products", productsRoutes);
+app.use("/users", usersRoutes);
 
 app.listen(3000);
